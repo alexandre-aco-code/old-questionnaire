@@ -1,0 +1,156 @@
+@import 'general';
+
+/* Le corps du document */
+
+
+body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    line-height: $line-height;
+    background-color: $color-body;
+    font-family: $font-text;
+    min-height: 100vh;
+
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-family: $font-titles;
+    }
+
+    h1 {
+        font-size: $size-title-1;
+        color: $color-title-1;
+
+        span {
+            color: $color-title-span;
+        } 
+    }
+
+    h2 {
+        font-size: $size-title-2;
+        color: $color-title-2;
+        margin:1rem;
+    }
+
+    h3 {
+        font-size: $size-title-3;
+        color: $color-title-3;
+    }
+
+    a {
+        text-decoration: none;
+        color: $color-link-text;
+
+        &:hover {
+            text-decoration: underline;
+            color: $color-link-hover;
+        }
+    }
+}
+
+// .container {
+//     min-height : 100%;
+// }
+ 
+
+header {
+    background-color: $color-header;
+    height: $height-header;
+    vertical-align: middle;
+
+    .display {
+        display: flex;
+    }
+
+    img {
+        width: 100px;
+        height: auto;
+    }
+
+    nav {
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: space-around;
+    }
+
+    h1 {
+        vertical-align: middle;
+    }
+
+    .score {
+        background: blue;
+    }
+
+
+
+}
+
+main {
+
+    article {
+        background-color: #fff;
+        padding: 1em;
+    }
+
+    img {
+        width: 300px;
+        text-align: center;
+    }
+
+    section+section {
+        margin-top: 2em;
+    }
+
+    button {
+        display: inline-block;
+        padding: 0.5em;
+        margin: 0 1rem;
+        width: 250px;
+        height: 90px;
+        border-radius: 5px;
+        color: $color-button-text;
+        background-color: $color-button-bg;
+        border: 0;
+        cursor: pointer;
+        user-select: none;
+
+        &:focus,
+        &:hover {
+            color: black; 
+            background-color: $color-button-hover;
+            transform: translateY(-5px);
+            transform: scale(1.1);
+            background: $color-button-hover;
+            transition: .5s ease;
+        }
+
+        &:active {
+            transform: scale(.95);
+            transition: transform .05s;
+        }
+    }
+    .progress {
+        color: #555;
+    }
+ 
+}
+
+footer {
+    background-color: $color-footer;
+    height: $height-footer;
+
+    p {
+        margin-top:0rem;
+    }
+}
+
+
+
+
+
+
+@import 'reponsive';
