@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://thumbs.dreamstime.com/z/smiley-asiatique-5856320.jpg"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Questionnaire de folie !</title>
+</head>
+<body>
+
+    <!-- HEADER --> 
+    <header class="header">
+        <div class="container display">
+
+            <!-- Logo Quiz -->
+
+            <a href="#">
+                <img src="assets/images/logo-2.svg" alt="logo-quiz-fait-par-moi"/>
+            </a>
+
+            <!-- Menu de navigation -->
+            
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#accueil">
+                            <i class="fas fa-seedling"></i><br>
+                            Catégories
+                        </a>
+                        <ul>
+                            <li><a href="#"><i class="fas fa-sun"></i> Pour s'échauffer</a></li>
+                            <li><a href="#"><i class="fas fa-sun"></i> Système solaire</a></li>
+                            <li><a href="#"><i class="fas fa-male"></i> Alain Chabat</a></li>
+                            <li><a href="#"><i class="fas fa-male"></i> ACo</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#toc">
+                        <i class="fas fa-poll-h"></i><br>
+                        Score</a>
+                        <ul>
+                            <li><a href="#">Classement ( Mondial )</a></li>
+                            <li><a href="#">Mes résultats</a></li>
+                        </ul>
+                    </li>
+                    <li class="selected"><a href="#toolbar">
+                        <i class="fab fa-wpexplorer"></i><br>
+                        Explorer</a>
+                        <ul>
+                            <li class="selected"><a href="index.php">Accueil</a></li>
+                            <li><a href="#">Votre avis</a></li>
+                            <li><a href="#">A propos de Quiz by ACo</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">
+                        <i class="fas fa-user-circle"></i><br>
+                        Mon Compte</a>
+                        <ul>
+                            <li><a href="#modalSignUp">S'inscrire</a></li>
+                            <li><a href="#modalLogin">Se Connecter</a></li>
+                            <li><a href="#">Mes informations</a></li>
+                            <li><a href="#">Administrateur (BackOffice)</a></li>
+                            <li><a href="#">Déconnexion</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                
+            </nav>
+
+            <!-- <img src="https://images.pexels.com/photos/40984/animal-ara-macao-beak-bird-40984.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="image de piou" /> -->
+
+            <!-- <h1>Quizz<span>z</span> de luxe! (mais quel quiz incroyable) <i class="far fa-laugh-squint"></i></h1> -->
+            <!-- <a href="#" id="user-button"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNTczMzk1MjU1MV5BMl5BanBnXkFtZTcwNDk2MzAyMg@@._V1_UY256_CR2,0,172,256_AL_.jpg"><i class="fas fa-user-tie"></i>Bienvenue Pseudo</a>
+
+            <svg id="circle" height="200" xmlns="http://www.w3.org/2000/svg">
+                <circle id="greencircle" cx="30" cy="30" r="30" fill="green" />
+            </svg>
+            
+            <div class="score">
+                <p>Score : 70%</p>
+            </div> -->
+
+
+        </div>
+    </header>
+
+    <!-- MAIN --> 
+    <main class="main">
+        <div class="container quiz">
+            <aside>
+                <p>Bienvenue : <span class="golden-text">*PSEUDO*</span> !</p>
+                <p>Score Général : <span class="golden-text">10</span> / <span class="purple-text">20</span> points</p>
+                <p>Classement : <span class="golden-text">1</span> / <span class="purple-text">40</span> personnes</p>
+                
+            </aside>
+
+            <section>
+                <div class="detail-categorie">
+                    <p>Catégorie : <a href="#" class="golden-text">Ces fruits et légumes de ouf</a></p>
+                    <p>Descriptif : <span class="golden-text">Il va falloir être très attentif et se rappeler l'époque ou on en mangeait encore.</span></p>
+                    <p>Score dans la Catégorie : <span class="golden-text">5</span> / <span class="purple-text">5</span></p>
+
+                </div>
+
+                <article>
+                    <h1><span class="golden-text">Q</span>uestio<span class="purple-text">n</span> numero oune :</h1>
+                    <h2>Qu'est ce que ceci ?</h2>
+                    <img src="https://images.pexels.com/photos/568471/pexels-photo-568471.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="image de poire"/>
+
+                    <div class="choices">
+                        <button>Pomme</button>
+                        <button>Poire</button>
+                        <button>Pastèque</button>
+                        <button>Fraise</button>
+                    </div>
+
+                    <div class="animated_div">
+                        <span>CORRECT !<i class="fas fa-laugh-beam"></i><i class="fas fa-glass-cheers"></i><i class="fas fa-laugh-squint"></i></span>
+                        <!-- <button>Question suivante</button> -->
+                    </div>
+
+                    <p class="progress">Question <span class="golden-text">1</span> sur <span class="purple-text">5</span></p>
+                </article>
+            </section>
+
+
+
+
+
+
+
+            <!-- LES MODALES-->
+            <!-- Modal pour s'inscrire' -->
+            <div class="modal-bg" id="modalSignUp">
+                <div class="modal-content">
+                    <a href="index.php"class="close">&times;</a>
+                    <p>Inscrivez vous pour profiter au maximum du super <span class="golden-text">Q</span>ui<span class="purple-text">Z</span>!</p>
+
+                    <form action="" method="POST">
+
+                        <label for="pseudo">Pseudo</label>
+                        <input
+                            type="text"
+                            name="pseudo"
+                            id="pseudo"
+                            placeholder="pseudo"
+                        />
+
+                        <label for="email">Email (aucun spam garanti)</label>
+                        <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="email"
+                        />
+
+                        <label for="password">Mot de passe</label>
+                        <input type="text" name="password" id="password" placeholder="password" />
+
+                        
+                        <label for="email">Votre Avatar (pour vous reconnaître)</label>
+                        <div class="display_flex">
+                            <input type="radio" name="photo" value="avatar1.jpg" id="avatar1" /><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNTczMzk1MjU1MV5BMl5BanBnXkFtZTcwNDk2MzAyMg@@._V1_UY256_CR2,0,172,256_AL_.jpg" alt="WillSmith">
+                            <input type="radio" name="photo" value="avatar2.jpg" id="avatar2" /><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjUzZTJmZDItODRjYS00ZGRhLTg2NWQtOGE0YjJhNWVlMjNjXkEyXkFqcGdeQXVyMTg4NDI0NDM@._V1_UY256_CR42,0,172,256_AL_.jpg" alt="GalGadot">
+                            <input type="radio" name="photo" value="avatar3.jpg" id="avatar3" /><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BOWViYjUzOWMtMzRkZi00MjNkLTk4M2ItMTVkMDg5MzE2ZDYyXkEyXkFqcGdeQXVyODQwNjM3NDA@._V1_UY256_CR36,0,172,256_AL_.jpg" alt="AdamDriver">
+                            <input type="radio" name="photo" value="avatar4.jpg" id="avatar4" /><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjk5NjE5NTczMV5BMl5BanBnXkFtZTcwODI0OTM0NA@@._V1_UY256_CR4,0,172,256_AL_.jpg" alt="Effy">
+                            <input type="radio" name="photo" value="avatar5.jpg" id="avatar5" /><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BOTU2MTI0NTIyNV5BMl5BanBnXkFtZTcwMTA4Nzc3OA@@._V1_UX172_CR0,0,172,256_AL_.jpg" alt="ChrisHemsworth">
+
+                        </div>
+
+                        <button type="submit">S'inscrire!</button>
+                    </form>
+                </div>
+            </div>
+
+
+            <!-- Modale pour login -->
+            <div class="modal-bg" id="modalLogin">
+                <div class="modal-content">
+                    <a href="index.php"class="close">&times;</a>
+                    <p>Merci de renseigner vos identifiants <span class="golden-text">Q</span>ui<span class="purple-text">Z</span>!</p>
+
+                    <form action="" method="POST">
+
+                        <label for="email">Email</label>
+                        <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="email"
+                        />
+
+                        <label for="password">Mot de passe</label>
+                        <input type="text" name="password" id="password" placeholder="password" />
+
+
+                        <button type="submit">Se Connecter</button>
+                    </form>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+
+
+    <!-- FOOTER --> 
+    <footer class="footer">
+        <div class="container signature">
+            <p>Projet réalisé par : <a href="https://www.linkedin.com/in/alexandre-connangle-6221a558/">Alexandre Code</a></p>
+            <a href="https://www.linkedin.com/in/alexandre-connangle-6221a558/">Mentions légales ©</a>
+            <p>Début 2021</p>
+        </div>
+
+    </footer>
+
+
+    <!-- SCRIPTS -->
+
+    <script src="assets/scripts/front.js"></script>
+
+
+
+</body>
+</html>
